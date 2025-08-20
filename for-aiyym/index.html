@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Love Aiyym</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff5f7;
+      overflow-x: hidden;
+    }
+
+    .dancing-font { font-family: 'Dancing Script', cursive; }
+
+    .heart-beat { animation: heartbeat 1.5s infinite; }
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .photo-frame {
+      background: linear-gradient(135deg, #ffcce6 0%, #ff99cc 100%);
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+      transition: all 0.3s ease;
+    }
+    .photo-frame:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
+    }
+
+    .video-frame {
+      background: linear-gradient(135deg, #ffb3d9 0%, #ff80b3 100%);
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+      transition: all 0.3s ease;
+    }
+    .video-frame:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
+    }
+
+    .love-message {
+      background: linear-gradient(135deg, #ffd6e7 0%, #ffb3d9 100%);
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Header with Date -->
+  <header class="bg-gradient-to-r from-pink-300 to-pink-500 py-8 text-center text-white">
+    <div class="container mx-auto px-4">
+      <h1 class="dancing-font text-4xl md:text-6xl font-bold mb-2">Айым менін</h1>
+      <p class="text-xl md:text-2xl dancing-font">My Eternal Love</p>
+      <div class="mt-6 bg-white bg-opacity-20 rounded-full inline-block px-6 py-2">
+        <p class="text-lg font-medium">Дата когда все звезды сошлись <span class="font-bold">June 8, 2024</span></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating Hearts -->
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <div class="heart absolute text-pink-200 opacity-70" style="top: 10%; left: 5%; font-size: 24px;">❤️</div>
+    <div class="heart absolute text-pink-200 opacity-70" style="top: 20%; left: 80%; font-size: 32px;">❤️</div>
+    <div class="heart absolute text-pink-200 opacity-70" style="top: 40%; left: 15%; font-size: 20px;">❤️</div>
+    <div class="heart absolute text-pink-200 opacity-70" style="top: 70%; left: 70%; font-size: 28px;">❤️</div>
+    <div class="heart absolute text-pink-200 opacity-70" style="top: 85%; left: 20%; font-size: 36px;">❤️</div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12 relative z-10">
+
+    <!-- Big Heart with I Love You -->
+    <section class="text-center mb-16">
+      <div class="heart-beat inline-block mb-6">
+        <i class="fas fa-heart text-pink-500 text-6xl md:text-8xl"></i>
+      </div>
+      <h2 class="dancing-font text-3xl md:text-5xl font-bold text-pink-600 mb-6">I Love You</h2>
+
+      <!-- Love in different languages -->
+      <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">French</p>
+          <p class="dancing-font text-xl">Je t'aime</p>
+        </div>
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">Spanish</p>
+          <p class="dancing-font text-xl">Te quiero</p>
+        </div>
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">German</p>
+          <p class="dancing-font text-xl">Ich liebe dich</p>
+        </div>
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">Italian</p>
+          <p class="dancing-font text-xl">Ti amo</p>
+        </div>
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">Japanese</p>
+          <p class="dancing-font text-xl">愛してる</p>
+        </div>
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">Korean</p>
+          <p class="dancing-font text-xl">사랑해</p>
+        </div>
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">Russian</p>
+          <p class="dancing-font text-xl">Я тебя люблю</p>
+        </div>
+        <div class="love-message rounded-lg p-4 text-center">
+          <p class="font-medium">Arabic</p>
+          <p class="dancing-font text-xl">أحبك</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Frames -->
+    <section class="mb-16">
+      <h2 class="dancing-font text-3xl md:text-4xl font-bold text-pink-600 mb-8 text-center">Our Memories</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Photo Frame 1 -->
+        <div class="photo-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените путь на своё фото -->
+          <img src="images/first kiss.jpg" alt="Our first photo together"
+               class="w-full h-64 object-cover rounded-lg mb-4" loading="lazy"/>
+          <p class="dancing-font text-xl text-pink-700">Our first photo together</p>
+        </div>
+
+        <!-- Photo Frame 2 -->
+        <div class="photo-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените путь на своё фото -->
+          <img src="images/moment.jpg" alt="Special moments"
+               class="w-full h-64 object-cover rounded-lg mb-4" loading="lazy"/>
+          <p class="dancing-font text-xl text-pink-700">Special moments</p>
+        </div>
+
+        <!-- Photo Frame 3 -->
+        <div class="photo-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените путь на своё фото -->
+          <img src="images/on air.jpg" alt="Love in the air"
+               class="w-full h-64 object-cover rounded-lg mb-4" loading="lazy"/>
+          <p class="dancing-font text-xl text-pink-700">Love in the air</p>
+        </div>
+
+        <!-- Photo Frame 4 -->
+        <div class="photo-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените путь на своё фото -->
+          <img src="images/smile.jpg" alt="Your beautiful smile"
+               class="w-full h-64 object-cover rounded-lg mb-4" loading="lazy"/>
+          <p class="dancing-font text-xl text-pink-700">Your beautiful smile</p>
+        </div>
+
+        <!-- Photo Frame 5 -->
+        <div class="photo-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените путь на своё фото -->
+          <img src="images/kiss.jpg" alt="Sweet kisses"
+               class="w-full h-64 object-cover rounded-lg mb-4" loading="lazy"/>
+          <p class="dancing-font text-xl text-pink-700">Sweet kisses</p>
+        </div>
+
+        <!-- Photo Frame 6 -->
+        <div class="photo-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените путь на своё фото -->
+          <img src="images/handing.jpg" alt="Holding hands"
+               class="w-full h-64 object-cover rounded-lg mb-4" loading="lazy"/>
+          <p class="dancing-font text-xl text-pink-700">Holding hands</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Video Frames -->
+    <section>
+      <h2 class="dancing-font text-3xl md:text-4xl font-bold text-pink-600 mb-8 text-center">Our Videos</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Video Frame 1 -->
+        <div class="video-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените poster/src на свои файлы -->
+          <video class="w-full h-64 rounded-lg mb-4" controls preload="metadata"
+                 poster="images/our-first-video-poster.jpg">
+            <source src="videos/first video.mp4" type="video/mp4"/>
+            Ваш браузер не поддерживает тег video.
+          </video>
+          <p class="dancing-font text-xl text-pink-700">Our first video</p>
+        </div>
+
+        <!-- Video Frame 2 -->
+        <div class="video-frame rounded-xl p-4 flex flex-col items-center">
+          <!-- TODO: замените poster/src на свои файлы -->
+          <video class="w-full h-64 rounded-lg mb-4" controls preload="metadata"
+                 poster="images/special-moments-poster.jpg">
+            <source src="videos/momentvid.mp4" type="video/mp4"/>
+            Ваш браузер не поддерживает тег video.
+          </video>
+          <p class="dancing-font text-xl text-pink-700">Special moments captured</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-pink-600 text-white py-8 text-center">
+    <div class="container mx-auto px-4">
+      <p class="dancing-font text-2xl mb-4">Forever Yours</p>
+      <div class="flex justify-center space-x-4">
+        <div class="heart-beat">
+          <i class="fas fa-heart text-white text-2xl"></i>
+        </div>
+        <div class="heart-beat" style="animation-delay: 0.2s;">
+          <i class="fas fa-heart text-white text-2xl"></i>
+        </div>
+        <div class="heart-beat" style="animation-delay: 0.4s;">
+          <i class="fas fa-heart text-white text-2xl"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Animate floating hearts
+    document.addEventListener('DOMContentLoaded', function() {
+      const hearts = document.querySelectorAll('.heart');
+
+      hearts.forEach(heart => {
+        const duration = Math.random() * 15 + 10;
+        heart.style.animation = `float ${duration}s infinite ease-in-out`;
+
+        if (!heart.style.top) {
+          heart.style.top = `${Math.random() * 100}%`;
+          heart.style.left = `${Math.random() * 100}%`;
+        }
+      });
+
+      // Add floating animation to CSS
+      const style = document.createElement('style');
+      style.innerHTML = `
+        @keyframes float {
+          0% {
+            transform: translate(0, 0) rotate(0deg);
+            opacity: 0.7;
+          }
+          50% {
+            transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px) rotate(${Math.random() * 360}deg);
+            opacity: 0.9;
+          }
+          100% {
+            transform: translate(0, 0) rotate(0deg);
+            opacity: 0.7;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    });
+  </script>
+
+  <!-- Подсказка:
+       Положи файлы так:
+       /images/first.jpg, /images/special.jpg, /images/love.jpg, /images/smile.jpg, /images/kisses.jpg, /images/hands.jpg
+       /images/our-first-video-poster.jpg, /images/special-moments-poster.jpg
+       /videos/our-first-video.mp4(.webm), /videos/special-moments.mp4(.webm)
+       Можно менять имена файлов — просто поправь пути в src/poster. -->
+</body>
+</html>
